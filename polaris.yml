@@ -8,7 +8,9 @@ project:
 capture:
   build:
     buildCommands:
+    - shell: [npm, install, -g, bower, gulp, nodemon]
     - shell: [npm, install]
+    - shell: [bower, install]
     - shell: [npm, build]
   fileSystem:
     ears:
