@@ -6,6 +6,10 @@ project:
     name: ${scm.git.commit}
     date: ${scm.git.commit.date}
 capture:
+  build:
+    buildCommands:
+    - shell: [npm, install]
+    - shell: [npm, build]
   fileSystem:
     ears:
       extensions: [ear]
